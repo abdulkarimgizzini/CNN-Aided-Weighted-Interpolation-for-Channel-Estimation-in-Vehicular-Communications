@@ -4,9 +4,9 @@ This repository includes the source code of the CNN-based channel estimators pro
 ### Files Description 
 - Main.m: The main simulation file, where the simulation parameters (Channel model, OFDM parameters, Modulation scheme, etc...) are defined. 
 - Channel_functions.m: Includes the pre-defined vehicular channel models [3] for different mobility conditions.
-- DNN_Datasets_Generation.m: Generating the LSTM training/testing datasets.
-- DNN_Results_Processing.m: Processing the testing results genertead by the LSTM testing and caculate the BER and NMSE results of the LSTM-DPA-TA estimator.
-- DNN.py: The CNN (SRCNN & DNCNN) training/testing is performed employing the generated training/testing datasets. The file should be executed twice as follows:
+- CNN_Datasets_Generation.m: Generating the LSTM training/testing datasets.
+- CNN_Results_Processing.m: Processing the testing results genertead by the LSTM testing and caculate the BER and NMSE results of the CNN-based estimator.
+- CNN.py: The CNN (SRCNN & DNCNN) training/testing is performed employing the generated training/testing datasets. The file should be executed twice as follows:
 	- **Step1: Training by executing this command python CNN.py  Mobility Channel_Model WI_Configuration Modulation_Order Channel_Estimator Training_SNR CNN_Type CNN_Input Epochs Batch_size**
 	- **Step2: Testing by executing this command: python CNN.py  Mobility Channel_Model WI_Configuration Modulation_Scheme Channel_Estimator Testing_SNR CNN_Type CNN_Input** 
 > ex: python CNN.py  Low VTV_UC 1P QPSK WI_ALS 40 SRCNN 104 500 128
