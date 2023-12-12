@@ -28,4 +28,4 @@ This repository includes the source code of the CNN-based channel estimators pro
 ### References
 - [1] A. Karim Gizzini, M. Chafii, A. Nimr, R. M. Shubair and G. Fettweis, "CNN Aided Weighted Interpolation for Channel Estimation in Vehicular Communications," in IEEE Transactions on Vehicular Technology, vol. 70, no. 12, pp. 12796-12811, Dec. 2021, doi: 10.1109/TVT.2021.3120267.
 
-For more information and questions, please contact me on abdulkarim.gizzini@ensea.fr 
+For more information and questions, please contact me on abdulkarimgizzini@gmail.com 
