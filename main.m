@@ -328,7 +328,7 @@ for n_snr = 1:N_SNR
         noise_power_OFDM_Symbols = var(noise_OFDM_Symbols);
         [Ck_Cofficients] = Interpolation_Cofficients_FP(nSym/2, fD, Tsignal, noise_power_OFDM_Symbols);
         [Ck_Cofficients_LP] = Interpolation_Cofficients_LP(nSym/2, fD, Tsignal, noise_power_OFDM_Symbols, ERR_DFT); 
-        Ck_Cofficients = [Ck_Cofficients_FP; Ck_Cofficients_FP];
+        Ck_Cofficients = [Ck_Cofficients; Ck_Cofficients];
         Ck_Cofficients_LP = [Ck_Cofficients_LP;Ck_Cofficients_LP];
        
         for li = 1:nSym/2 
