@@ -80,9 +80,9 @@ c                         = 3e8;                    % Speed of Light in m/s
 fD                        = 250;%(vel/3.6)/c*fc;         % Doppler freq in Hz
 rchan                     = ch_func.GenFadingChannel(ChType, fD, fs);
 %% Simulation Parameters 
-load('./samples_indices_10.mat');
+load('./samples_indices_1000.mat');
 configuration     = 'training'; % training or testing
-WI_configuration  = '3P';
+WI_configuration  = '1P';
 if (isequal(configuration,'training'))
     indices = training_samples;
     EbN0dB           = 40; 
